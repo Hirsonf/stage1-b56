@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/contact.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/icons/brandred.png" alt="logo dumbways">
+        </div>
+        <div class="left">
+            <ul>
+                <li>
+                    <a href="./index.html" style="font-weight: bold;">Home</a>
+                </li>
+                <li>
+                    <a href="">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>
+                <a href="./contact.html">Contact Me</a>
+            </button>
+        </div>
+    </nav>
+
+    <form>
+        <div>
+            <label for="nameInput">Name</label>
+            <input id="nameInput" type="text" required placeholder="input your name" />
+        </div>
+
+        <div>
+            <label for="inputEmail">Email</label>
+            <input id="inputEmail" type="email" />
+        </div>
+        <div>
+            <label for="inputPhoneNumber">Phone Number</label>
+            <input id="inputPhoneNumber" type="number" />
+        </div>
+
+        <div>
+            <label for="Subject">Subject</label>
+            <select id="Subject">
+                <option hidden>Select Option!</option>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
+            </select>
+        </div>
+        <div>
+            <label for="Message">Your Message</label>
+            <textarea id="Message"></textarea>
+        </div>
+
+        <div>
+            <button type="button" onclick="getData()">Submit</button>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </form>
+</body>
+
+</html>

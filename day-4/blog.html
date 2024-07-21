@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/blog.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./assets/icons/brandred.png" alt="logo dumbways">
+        </div>
+        <div class="left">
+            <ul>
+                <li>
+                    <a href="./index.html" style="font-weight: bold;">Home</a>
+                </li>
+                <li>
+                    <a href="">My Project</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>
+                <a href="./contact.html">Contact Me</a>
+            </button>
+        </div>
+    </nav>
+    <div class="blog">
+        <form class="form-upload" onsubmit="submitBlog(event)">
+            <div class="form-group">
+                <label for="project">Project Name</label>
+                <input type="text" id="inputProject" class="form-control">
+            </div>
+            <div class="start_end_date_content">
+                <div class="item_start_and_date">
+                    <label for="text">Start Date</label>
+                    <input type="datetime-local" class="form-control" id="inputDate1" name="">
+                </div>
+                <div class="item_start_and_date">
+                    <label for="date">End Date</label>
+                    <input type="datetime-local" class="form-control" id="inputDate2" name="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="inputDescription"> </textarea>
+            </div>
+            <div class="project-details">
+                <label>Tecnologies</label>
+                <div class="list-project">
+                    <div class="input_js1">
+                        <div class="item_input">
+                            <input type="checkbox" name="nodejs" id="NodeJs" /> 
+                            <label for="inputnodejs">Node Js</label>
+                        </div>
+                        <div class="item_input">
+                            <input type="checkbox" name="reactjs" id="ReactJs">
+                            <label for="inputreactjs">Next Js</label>
+                        </div>
+                    </div>
+                    <div class="input_js">
+                        <div class="item_input">
+                            <input type="checkbox" name="nextjs" id="NextJs">
+                            <label for="inputnextjs">React Js</label>
+                        </div>
+                        <div class="item_input">
+                            <input type="checkbox" name="typescript" id="TypeScript">
+                            <label for="inputtypescript">typescript</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="file">
+                    <label for="image">Upload emage</label>
+                    <input type="file" id="inputImage" class="file-input">
+                </div>
+            </div>
+            <div class="button-input">
+                <button type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+        <hr class="line">
+        <div id="content" class="blog-list">
+        </div>
+    </div>
+    <div id="content" class="blog-list">
+    </div>
+    <script src="./assets/js/blog.js"></script>
+</body>
+</html>

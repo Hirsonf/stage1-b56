@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: rgb(245, 176, 150);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 75px;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 12px;
+    padding-top: 16px;
+}
+
+.left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.left ul {
+    display: flex;
+
+}
+
+.left ul li {
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.right button {
+    background-color: rgb(36, 23, 19);
+    padding: 8px 16px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+}
+
+.right button a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    text-align: center;
+}
+
+.box {
+    /* width: 35%;
+    margin: auto;
+    padding: 10px; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 75px;
+    padding-right: 80px;
+    background-color: white;
+    box-shadow: 0px 0px 20px;
+    margin: 70px;
+}
+.paragraf p {
+    padding-right: 50px;
+
+}
+.button {
+    color:white;
+    background-color: rgb(37, 28, 28);
+    padding: 5px 25px;
+    border-radius: 50px;
+    /* margin: 30px 0px; */
+}
+.pormulir {
+    display: flex;
+    align-items: center;
+    margin: 30px 0px;
+}
+.pormulir button {
+margin-right: 20px; 
+}
+.pormulir p {
+    font-size: 17px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+}
+.icon a {
+    margin:  0px 15px 0px 0px;
+}
+.icon a img {
+    width: 35px;
+}
+.container {
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 7px;
+}
+.container img {
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 8px 8px 0px 0px;
+}
+.container h3 {
+    text-align: center;
+}
+.container p {
+    text-align: center;
+}
