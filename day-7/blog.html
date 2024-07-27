@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
@@ -21,14 +23,23 @@
                 <li>
                     <a href="./blog.html">My Project</a>
                 </li>
+                <li>
+                    <a href="./testimonial.html">Testimonial</a>
+                </li>
             </ul>
         </div>
         <div class="right">
             <button>
                 <a href="./contact.html">Contact Me</a>
             </button>
+            <i class="fa-solid fa-bars" aria-hidden="true" style="cursor: pointer;" id="humberger-button" onclick="openHumberger()"></i>
         </div>
     </nav>
+    <div class="container-humberger" id="container-humberger">
+        <a href="index.html">Home</a>
+        <a href="blog.html">My Project</a>
+        <a href="contact.html" class="active1">Contact Me</a>
+    </div>
     <div class="blog">
         <form class="form-upload" onsubmit="submitBlog(event)">
             <div class="form-group">
@@ -92,5 +103,6 @@
     <div id="content" class="blog-list">
     </div>
     <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/nav.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+.containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+.containers h1 {
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+
+}
+.testimonials{
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.testimonial{
+    width: 22%;
+    margin: 0px 10px 10px 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+.testimonials .testimonial img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.testimonials .testimonial .author {
+    text-align: end;
+    font-style: italic;
+    font-weight: bold;
+}
+.container-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rating button {
+    margin: 30px;
+    padding: 0px 15px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+}
+.rating{
+    margin: 15px;
+}
+.container-rating{
+    display: flex;
+    justify-content: center;
+    
+}
+.testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+.testimonials{
+    flex-wrap: wrap;
+}
