@@ -28,12 +28,10 @@ function html(item) {
 }
 
 async function allTestimonial() {
-    const testimonials = await fetchUrl(" https://api.npoint.io/27fe843b4402d3dfc780");
- debugger;
-    console.log(testimonials)
+    const testimonials = await fetchUrl(" https://api.npoint.io/27fe843b4402d3dfc780")
 
-    let testimonialHtml = [];
-    testimonials.forEach((item) => {
+    let testimonialHtml = ``;
+    TestimoniData.forEach((item) => {
         testimonialHtml += html(item);
     });
     document.getElementById("testimonials").innerHTML = testimonialHtml;
@@ -44,7 +42,7 @@ allTestimonial();
 async function filterTestimonials(rating) {
     const testimonials = await fetchUrl(" https://api.npoint.io/27fe843b4402d3dfc780")
     let testimonialHtml = ``;
-    const testimonialFilter = testimonials.filter((item) => {
+    const testimonialFilter = TestimoniData.filter((item) => {
         return item.rating === rating;
     });
 
